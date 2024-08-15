@@ -6,6 +6,10 @@ A tool to extract impact information from doc comments.
 
 Many large applications are tightly coupled, so changes in one part can impact others. This project will implement a tool that extracts the information about the impact from the tag @impact in doc comments and shows them for help when the code is changed.
 
+The following is a simplified diagram.
+
+![implementation overview](images/1.png)
+
 ## Tags
 
 ### @impact
