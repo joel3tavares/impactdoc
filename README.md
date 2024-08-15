@@ -30,8 +30,6 @@ function doSomething()
 
 ```php
 /**
-
-/**
  * @impact This change modifies the functionality of the document printing feature.
  */
 class PrintDocumentController
@@ -40,7 +38,7 @@ class PrintDocumentController
 
     /**
      * @impact This change affects the print functionality for features A, B, and C. 
-       @impact Ensure that issues related to Mantis #1000, #2000, and #3000 are not reopened. 
+       @impact Ensure that issues related to Mantis #1000, #2000 and #3000 are not reopened. 
      */
     public function printAction()
     {
