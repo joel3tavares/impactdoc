@@ -1,10 +1,6 @@
 # impactdoc
 
-A tool to extract impact information from doc comments.
-
-## Motivation
-
-Many large applications are tightly coupled, so changes in one part can impact others. This project will implement a tool that extracts the information about the impact from the tag @impact in doc comments and shows them for help when the code is changed.
+Many large applications are tightly coupled, so changes in one part can affect others. This project implements a tool that extracts information from @impact tags in doc comments to help manage code changes in tightly coupled applications.
 
 The following is a simplified diagram.
 
