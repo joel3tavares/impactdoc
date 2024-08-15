@@ -16,7 +16,7 @@ The @impact tag can be used to document side effects that may occur if the code 
 @impact <description>
 ```
 
-Example:
+Examples:
 
 ```php
 /**
@@ -25,6 +25,27 @@ Example:
 function doSomething()
 {
     // ...
+}
+```
+
+```php
+/**
+
+/**
+ * @impact This change modifies the functionality of the document printing feature.
+ */
+class PrintDocumentController
+{
+    // ...
+
+    /**
+     * @impact This change affects the print functionality for features A, B, and C. 
+       @impact Ensure that issues related to Mantis #1000, #2000, and #3000 are not reopened. 
+     */
+    public function printAction()
+    {
+        // ...
+    }
 }
 ```
 
