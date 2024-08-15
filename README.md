@@ -22,7 +22,7 @@ The @impact tag can be used to document side effects that may occur if the code 
 
 Example:
 
-```
+```php
 /**
  * @impact This change affects login and logout functionality.
  */
@@ -39,20 +39,14 @@ function doSomething()
 
 ## Build
 
-```
+```sh
 $ make
 ```
 
 ## Usage
 
-```
-impactdoc <SourceCode.php> <Changed lines separated by spaces>
-```
-
-Example:
-
-```
-$ impactdoc LoginService.php 30 55
+```sh
+$ impactdoc <SourceCode.php> <ModifiedLinesSeparatedBySpaces>
 ```
 
 ## Current issues
