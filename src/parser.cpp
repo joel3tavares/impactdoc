@@ -33,6 +33,7 @@ ImpactContext ImpactParser::parse()
             case '\n':
                 incrementLineCount();
             case ' ':
+            case '\t':
                 parseToken(token);
                 token.clear();
             break;
