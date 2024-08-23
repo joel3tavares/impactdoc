@@ -5,7 +5,7 @@
 Args::Args(int argc,char *argv[])
 {
     if (argc < 3) {
-        throw std::invalid_argument("impactdoc 0.1\nUsage: impactdoc <filename.php> <lines separated by space>\n");
+        throw std::invalid_argument("impactdoc 0.1\nUsage: impactdoc <filename.php> <ModifiedLinesSeparatedBySpaces>\n");
     }
 
     fileName = std::string(argv[1]);
