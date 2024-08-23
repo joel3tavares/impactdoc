@@ -61,7 +61,7 @@ $ make
 ## Usage
 
 ```sh
-$ impactdoc <SourceCode.php> <ModifiedLinesSeparatedBySpaces>
+$ impactdoc <filename.php> <ModifiedLinesSeparatedBySpaces>
 ```
 
 ## Current issues
