@@ -60,8 +60,24 @@ $ make
 
 ## Usage
 
+CLI:
+
 ```sh
 $ impactdoc <filename.php> <ModifiedLinesSeparatedBySpaces>
+```
+
+A job in a Gitlab pipeline:
+
+```
+impact-report:
+  image: joel3tavares/impactdoc:latest
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+  script:
+    - /opt/check.sh > report.txt 2>&1
+  artifacts:
+    paths:
+      - report.txt
 ```
 
 ## Current issues
